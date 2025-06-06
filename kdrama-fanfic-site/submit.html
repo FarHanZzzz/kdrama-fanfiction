@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Ending</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dramas.html">Dramas</a>
+    <a href="submit.html">Submit Ending</a>
+    <a href="about.html">About</a>
+    <button id="theme-toggle">Ìºô</button>
+  </nav>
+
+  <header>
+    <h1>‚úçÔ∏è Create Your Own Ending</h1>
+    <p>Share your alternative ending with fellow fans</p>
+  </header>
+
+  <main>
+    <section id="submit-form">
+      <form id="story-form">
+        <label for="drama">Select Drama:</label>
+        <select id="drama" required>
+          <option value="">-- Choose a Drama --</option>
+          <option value="cloy">Crash Landing On You</option>
+          <option value="goblin">Goblin</option>
+          <option value="itaewon">Itaewon Class</option>
+          <option value="boys">Boys Over Flowers</option>
+          <option value="dots">Descendants of the Sun</option>
+          <option value="tkem">The King: Eternal Monarch</option>
+        </select>
+        
+        <label for="title">Story Title:</label>
+        <input type="text" id="title" required placeholder="Your creative title...">
+        
+        <label for="author">Your Name:</label>
+        <input type="text" id="author" required placeholder="Your pen name...">
+        
+        <label for="content">Your Story:</label>
+        <textarea id="content" rows="10" required placeholder="Write your alternative ending here..."></textarea>
+        
+        <button type="submit">Submit Story</button>
+      </form>
+      <div id="submit-status"></div>
+    </section>
+  </main>
+  
+  <script src="js/submit.js"></script>
+</body>
+</html>
